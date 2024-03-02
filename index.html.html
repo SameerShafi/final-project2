@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo{
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 1px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .links{
+            position: relative;
+            word-wrap: normal;
+            display: flex;
+            padding-left: 520px;
+            margin-top: 10px;
+           font-size: medium;
+
+            
+       
+        }
+        .links a{
+            text-decoration: none;
+            color: black;
+            padding: 12px;
+           display: flex; 
+        }
+        .link2 a {
+              text-decoration: none;
+              color: black;
+              position: absolute;
+              top: 1px;
+              font-weight:bold;
+              margin-left: 1000px;
+              margin-top: 26px;
+              
+        }
+        .word1:hover{
+            margin: 0;
+            padding: 0;
+               background-color: rgb(243, 243, 243);
+               border-radius: 10px;
+               color: black;
+               padding: 5px;
+               transition: 0.2s;
+        }
+        .word2:hover{
+            margin: 0;
+            padding: 0;
+               background-color: rgb(243, 243, 243);
+               border-radius: 10px;
+               color: black;
+               padding: 5px;
+               transition: 0.2s;
+
+        }
+        .product-card {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      margin-top: 100px;
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      color: #007bff;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .buy-btn:hover {
+      background-color: #0056b3;
+    }
+    .main-card{
+        display: flex;
+        justify-content: space-between;
+        flex: wrap;
+    }
+      
+
+
+
+    @media only screen and (max-width: 768px) {
+        /* Adjustments for smaller screens */
+
+        .links {
+            padding-left: 0; /* Adjust as needed for smaller screens */
+            justify-content: center; /* Center align the links */
+        }
+
+        .link2 {
+            position: static; /* Remove absolute positioning */
+            margin: 10px 0; /* Add margin for spacing */
+            text-align: center; /* Center align the link */
+        }
+
+        .main-card {
+            flex-direction: column; /* Stack cards vertically on smaller screens */
+            align-items: center; /* Center align the cards */
+            margin-top: 20px; /* Add margin for spacing */
+        }
+
+        .product-card {
+            width: 100%; /* Make cards take full width on smaller screens */
+            margin: 10px 0; /* Add margin for spacing between cards */
+        }
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="links">
+        <a href=""><span><b style="font-size:16px;">Stays</b></span></a>
+        <a href=""><span class="word1">Experiance</span></a>
+        <a href=""><span class="word2">Online-Experiance</span></a>
+    </div>
+<div class="link2">
+    <a href="">Airbnb your home</a>
+</div>
+    <img src="./images/Airbnb_Logo_Bélo.svg-removebg-preview.png" alt="Logo"
+    width="100px" class="logo">
+
+
+
+
+    <div class="main-card">
+        <div class="product-card">
+            <img class="product-img" src="https://a0.muscache.com/im/pictures/miso/Hosting-53519419/original/f0f0a291-65a9-442b-9036-45b7e5e25676.jpeg?im_w=720" alt="Product Image">
+            <div class="product-details">
+              <div class="product-title">Product Name</div>
+              <div class="product-price">$19.99</div>
+              <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+    
+          <div class="product-card">
+            <img class="product-img" src="https://a0.muscache.com/im/pictures/miso/Hosting-53519419/original/f0f0a291-65a9-442b-9036-45b7e5e25676.jpeg?im_w=720" alt="Product Image">
+            <div class="product-details">
+              <div class="product-title">Product Name</div>
+              <div class="product-price">$19.99</div>
+              <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+    
+    
+    
+          <div class="product-card">
+            <img class="product-img" src="https://a0.muscache.com/im/pictures/miso/Hosting-53519419/original/f0f0a291-65a9-442b-9036-45b7e5e25676.jpeg?im_w=720" alt="Product Image">
+            <div class="product-details">
+              <div class="product-title">Product Name</div>
+              <div class="product-price">$19.99</div>
+              <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+    
+    
+    
+          <div class="product-card">
+            <img class="product-img" src="https://a0.muscache.com/im/pictures/miso/Hosting-53519419/original/f0f0a291-65a9-442b-9036-45b7e5e25676.jpeg?im_w=720" alt="Product Image">
+            <div class="product-details">
+              <div class="product-title">Product Name</div>
+              <div class="product-price">$19.99</div>
+              <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+          
+    
+
+    </div>
+  
+</body>
+</html>
